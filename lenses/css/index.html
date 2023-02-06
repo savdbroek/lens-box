@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+  
+<meta name="title" content="CSS" />
+<meta name="description" content="" />
+
+<meta property="og:title" content="CSS" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+
+
+  <link rel="short icon" type="image/x-icon"  href="https://lenses.spyglass.fyi/images/favicon.png" />
+  <link rel="alternate icon" type="image/png" href="https://lenses.spyglass.fyi/images/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="https://lenses.spyglass.fyi/images/favicon.svg" />
+
+  <link rel="stylesheet" href="https://lenses.spyglass.fyi/css/styles.css">
+  <title>Spyglass Lenses • CSS</title>
+  
+
+  
+  
+</head>
+<body class="flex flex-col h-auto w-screen">
+  <div class="flex flex-col bg-orange-100 content-center w-full left-0 top-0 h-full pt-4 pb-8 z-0">
+    <div class="logo-title px-8 text-center grow-0 my-auto">
+      <div>
+        <a href="https://lenses.spyglass.fyi/">
+            <img class="mx-auto w-32"
+            src=https://lenses.spyglass.fyi/images/logo@2x.png
+            alt="logo"
+            />
+        </a>
+        <h1 class="text-2xl font-bold">
+          <a href="https://lenses.spyglass.fyi/">
+            Spyglass Lenses
+          </a>
+        </h1>
+        <div class="text-sm my-4"></div>
+      </div>
+      <ul class="flex flex-row gap-4 justify-center">
+        <li>
+          <a
+            class="block bg-white rounded-full p-2 hover:text-sky-600 border-2 border-white hover:border-sky-600"
+            href="https://discord.gg/663wPVBSTB"
+            aria-label="Join our Discord community"
+          >
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor">
+                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+            </svg>
+          </a>
+        </li><li>
+          <a
+            class="block bg-white rounded-full p-2 hover:text-sky-600 border-2 border-white hover:border-sky-600"
+            href="https://github.com/spyglass-search"
+            aria-label="Go to Github profile page">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+        </li><li>
+          <a
+            class="block bg-white rounded-full p-2 hover:text-sky-600 border-2 border-white hover:border-sky-600"
+            href="https://twitter.com/spyglassfyi"
+            aria-label="Go to Twitter profile page">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="flex flex-col grow-0 h-screen w-full bg-white animate-fade-in-down z-10">
+    <div>
+      <ul class="flex flex-row gap-8 px-8 sm:px-16 py-4 border-b-2 border-b-orange-100">
+        
+        
+        
+        
+        <li>
+          <a class="font-serif pb-4 hover:text-sky-600 "
+            href="https://lenses.spyglass.fyi/">
+            Browse
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      
+<article class="animate-fade-in-down pt-8 px-8 sm:px-16 mb-32 max-w-screen-md mx-auto">
+  <div class="mb-4">
+    <h1 class="text-4xl font-bold mb-2">
+        <a href="https:&#x2F;&#x2F;lenses.spyglass.fyi&#x2F;lenses&#x2F;css&#x2F;">CSS</a>
+    </h1>
+    <div class="meta flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-8 text-sm mt-4 ">
+      
+      <div class="flex flex-row gap-2 items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" alt="written by [spyglass-search]" class="w-4 h-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"></path><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="m2 2 7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+        <span class="italic">spyglass-search</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="post-content leading-relaxed">
+    <div class="pb-4">CSS Documentation</div>
+
+    <h2 class="font-bold">Domains</h2>
+    <div class="font-mono text-xs text-gray-600 border-gray-200 border p-2 bg-gray-200 rounded">
+      
+      <span class="text-gray-400">None specified</span>
+      
+    </div>
+
+    <h2 class="font-bold pt-8">URLs</h2>
+    <div class="text-sm pb-4">
+        In addition to domains, URL patterns are used to narrow down what is crawled even
+        more.
+    </div>
+    <div class="font-mono text-xs text-gray-600 border-gray-200 border p-2 bg-gray-200 rounded">
+      
+      <ul>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;yari-demos.prod.mdn.mozit.cloud&#x2F;zh-CN&#x2F;docs&#x2F;Web&#x2F;CSS&#x2F;</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;github.com&#x2F;mdn&#x2F;learning-area&#x2F;contributors&#x2F;main&#x2F;css&#x2F;</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;interactive-examples.mdn.mozilla.net&#x2F;pages&#x2F;css&#x2F;</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;MDN&#x2F;Writing_guidelines&#x2F;Writing_style_guide&#x2F;Code_style_guide&#x2F;CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Learn&#x2F;Tools_and_testing&#x2F;Cross_browser_testing&#x2F;HTML_and_CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Learn&#x2F;Accessibility&#x2F;CSS_and_JavaScript&#x2F;Test_your_skills__CSS_and_JavaScript_accessibility</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Learn&#x2F;Accessibility&#x2F;CSS_and_JavaScript</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Learn&#x2F;Getting_started_with_the_web&#x2F;CSS_basics</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Learn&#x2F;CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Learn&#x2F;CSS&#x2F;</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;Guide&#x2F;CSS&#x2F;Block_formatting_context</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;Guide&#x2F;CSS&#x2F;Getting_started&#x2F;Challenge_solutions</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;css-2</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;CSS&#x2F;</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericArray</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkewX&#x2F;CSSSkewX</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkewX&#x2F;ax</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;cssText</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;item</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;parentRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;getPropertyPriority</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;setProperty</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;length</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;getPropertyCSSValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;msGetPropertyEnabled</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;getPropertyValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;msPutPropertyEnabled</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;removeProperty</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration&#x2F;cssFloat</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSValueList</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathProduct&#x2F;CSSMathProduct</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathProduct&#x2F;values</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Typed_OM_API&#x2F;Guide</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Painting_API</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnitValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMediaRule&#x2F;media</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkewX</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSkeyframeRule-2</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathValue&#x2F;operator</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnparsedValue&#x2F;entries</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnparsedValue&#x2F;keys</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnparsedValue&#x2F;length</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnparsedValue&#x2F;forEach</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnparsedValue&#x2F;values</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnparsedValue&#x2F;CSSUnparsedValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Counter_Styles</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPositionValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathSum</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSScale&#x2F;z</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSScale&#x2F;y</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSScale&#x2F;x</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSScale&#x2F;CSSScale</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkewY</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Object_Model&#x2F;Determining_the_dimensions_of_elements</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Object_Model&#x2F;Using_dynamic_styling_information</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Object_Model&#x2F;CSS_Declaration</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Object_Model&#x2F;Managing_screen_orientation</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Object_Model&#x2F;CSS_Declaration_Block</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathMax</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRule&#x2F;cssText</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRule&#x2F;parentRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRule&#x2F;type</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRule&#x2F;parentStyleSheet</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTranslate&#x2F;z</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTranslate&#x2F;y</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTranslate&#x2F;CSSTranslate</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTranslate&#x2F;x</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNamespaceRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSImportRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPropertyRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleDeclaration</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMatrixComponent</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSFontFaceRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformComponent</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;CSSTransformValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;toMatrix</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;entries</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;keys</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;length</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;forEach</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;values</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformValue&#x2F;is2D</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPageRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleValue&#x2F;parseAll</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleValue&#x2F;parse</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSkeyframeRule&#x2F;style</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSkeyframeRule&#x2F;keyText</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPerspective&#x2F;length</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPerspective&#x2F;CSSPerspective</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Painting_API&#x2F;Guide</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPerspective</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNamespaceRule&#x2F;namespaceURI</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNamespaceRule&#x2F;prefix</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;getRGBColorValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;getStringValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;primitiveType</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;getCounterValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;setFloatValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;getRectValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;getFloatValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue&#x2F;setStringValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSValueList&#x2F;item</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSValueList&#x2F;length</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathMin</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathInvert</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSGroupingRule&#x2F;insertRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSGroupingRule&#x2F;cssRules</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSGroupingRule&#x2F;deleteRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSVariableReferenceValue&#x2F;variable</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSVariableReferenceValue&#x2F;fallback</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSVariableReferenceValue&#x2F;CSSVariableReferenceValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSConditionRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericArray&#x2F;length</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMatrixComponent&#x2F;CSSMatrixComponent</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMatrixComponent&#x2F;matrix</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSFontFaceRule&#x2F;style</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPageRule&#x2F;style</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPageRule&#x2F;selectorText</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSValue&#x2F;cssText</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSValue&#x2F;cssValueType</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeyframesRule&#x2F;findRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeyframesRule&#x2F;appendRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeyframesRule&#x2F;cssRules</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeyframesRule&#x2F;deleteRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeyframesRule&#x2F;name</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathProduct</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Object_Model</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSImageValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathNegate&#x2F;value</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathNegate&#x2F;CSSMathNegate</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathSum&#x2F;CSSMathSum</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathSum&#x2F;values</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRuleList</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRotate&#x2F;angle</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRotate&#x2F;z</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRotate&#x2F;y</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRotate&#x2F;CSSRotate</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRotate&#x2F;x</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkew&#x2F;ay</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkew&#x2F;ax</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkew&#x2F;CSSSkew</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Typed_OM_API</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnparsedValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRotate</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTranslate</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSVariableReferenceValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnitValue&#x2F;CSSUnitValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnitValue&#x2F;value</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSUnitValue&#x2F;unit</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathNegate</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSConditionRule&#x2F;conditionText</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeyframesRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathMin&#x2F;CSSMathMin</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathMin&#x2F;values</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathMax&#x2F;CSSMathMax</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathMax&#x2F;values</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSupportsRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleRule&#x2F;styleMap</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleRule&#x2F;style</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleRule&#x2F;selectorText</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSGroupingRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;max</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;mul</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;to</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;div</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;sub</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;type</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;add</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;min</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;parse</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;toSum</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSNumericValue&#x2F;equals</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformComponent&#x2F;toMatrix</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformComponent&#x2F;toString</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSTransformComponent&#x2F;is2D</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPropertyRule&#x2F;name</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPropertyRule&#x2F;syntax</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPropertyRule&#x2F;initialvalue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPropertyRule&#x2F;inherits</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;replace</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;removeRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;ownerRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;addRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;CSSStyleSheet</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;insertRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;cssRules</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;deleteRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;replaceSync</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleSheet&#x2F;rules</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Properties_and_Values_API</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPositionValue&#x2F;CSSPositionValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPositionValue&#x2F;y</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPositionValue&#x2F;x</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeyframeRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS&#x2F;escape</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS&#x2F;supports</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS&#x2F;RegisterProperty</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS&#x2F;paintWorklet</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS&#x2F;registerProperty-2</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS&#x2F;factory_functions</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMediaRule</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSScale</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSImportRule&#x2F;stylesheet</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSImportRule&#x2F;media</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSImportRule&#x2F;href</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSPrimitiveValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathInvert&#x2F;value</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSMathInvert&#x2F;CSSMathInvert</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeywordValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSS_Properties_and_Values_API&#x2F;guide</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;additiveSymbols</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;pad</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;negative</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;system</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;symbols</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;fallback</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;suffix</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;speakAs</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;name</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;range</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSCounterStyleRule&#x2F;prefix</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSStyleValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRuleList&#x2F;item</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSRuleList&#x2F;length</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkewY&#x2F;CSSSkewY</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkewY&#x2F;ay</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeywordValue&#x2F;value</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSKeywordValue&#x2F;CSSKeywordValue</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;CSSSkew</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;SVG&#x2F;Tutorial&#x2F;SVG_and_CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;Block&#x2F;CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;CSS_Selector</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;Descriptor_(CSS)</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;Property&#x2F;CSS</li>
+      
+        <li class="pb-1">https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;CSS</li>
+      
+      </ul>
+      
+    </div>
+
+    <h2 class="font-bold pt-8">Rules</h2>
+    <div class="font-mono text-xs text-gray-600 border-gray-200 border p-2 bg-gray-200 rounded">
+      
+      <span class="text-gray-400">None specified</span>
+      
+    </div>
+
+  </div>
+  <div class="text-xs pt-4">🔭</div>
+</article>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://lenses.spyglass.fyi/elasticlunr.min.js"></script>
+  <script type="text/javascript" src="https://lenses.spyglass.fyi/search_index.en.js"></script>
+  <script type="text/javascript" src="https://lenses.spyglass.fyi/js/search.js"></script>
+</body>
+</html>
